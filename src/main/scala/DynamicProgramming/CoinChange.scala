@@ -17,18 +17,6 @@ object CoinChange {
     */
 
   def coinChange(coins: List[Int], money: Int): Int = {
-    val combinations :Array[Int] = new Array[Int](money+1)
-
-    combinations(0) = 1
-
-    for (coin <- coins) {
-      for (i <- coin to money) {
-        if (i >= coin) {
-          combinations(i) += combinations(i-coin)
-        }
-      }
-    }
-
-    combinations(money)
+    ???
   }
 }
