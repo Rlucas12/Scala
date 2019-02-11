@@ -1,7 +1,7 @@
 package Mathematics
 
 object Fibonacci {
-  private val allFibonacci: Stream[Int] = 1 #:: 1 #:: allFibonacci.zip(allFibonacci.tail).map(t => t._1 + t._2)
+  private val allFibonacci: Stream[Int] = ???
 
   /**
     * Method to use the allFibonacci stream to take the first total numbers
@@ -9,5 +9,5 @@ object Fibonacci {
     * @param total
     * @return
     */
-  def fibGenerate(total: Int): Seq[Int] = allFibonacci.take(total)
+  def fibGenerate(total: Int): Seq[Int] = ???
 }
